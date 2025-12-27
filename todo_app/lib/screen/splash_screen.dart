@@ -1,100 +1,58 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/component/app_button.dart';
+import 'package:todo_app/constant/app_path.dart';
+import 'package:todo_app/screen/registration_screen.dart';
 
+/// Cốt lỗi cuối cùng của lập trình
+/// Code phải dễ đọc, dễ hiểu, dễ bảo trì, dễ mở rộng, dễ tái sử dụng, dễ kiểm thử,
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    body: Stack(
-      children: [
-        Positioned(
-          width: 290,
-          height: 270,
-          top: -109,
-          left: -99,
-          child: Image.asset(
-            'assets/images/shape.png',
-          )
-        ),
-         Positioned(
-          width: 172.56,
-          height: 170,
-          top:220,
-          left:102,
-          child:Image.asset('assets/images/undraw_mobile_ux_o0e1 1.png')
-         ),
-         Positioned(
-          top:435,
-          left:48,
-          width:281,
-          height:21,
-          child:
+      body: Column(
+        children: [
+          Align(
+            alignment: Alignment.topLeft,
+            child: Image.asset(AppPath.shape),
+          ),
+          SizedBox(height: (59 / 812) * MediaQuery.of(context).size.height),
+          Center(child: Image.asset(AppPath.imgPhoneWithPerson)),
+          SizedBox(height: 45),
           Text(
-            "Gets things done with TODO", 
+            'Gets things done with TODO',
             style: TextStyle(
-              fontFamily: 'Poppins',
-              fontWeight: FontWeight.w600,
               fontSize: 18,
-              height:1.16,
-              letterSpacing: 1.08, 
-              color:Colors.black.withOpacity(0.75)
-) 
-              )
-       ),
-          Positioned(
-            width: 281,
-            height: 72,
-            top: 492,
-            left: 48,
-            child:
-             Text(
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum dictum tempus, interdum at dignissim metus. Ultricies sed nunc.", 
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontFamily: 'Poppins',
-                  fontWeight: FontWeight.w400,
-                  fontSize: 13,
-                  height: 1.37, 
-                  letterSpacing: 0.78,
-                  color:Colors.black.withOpacity(0.74)
-                  
-                )
-              ),
-            
+              fontWeight: FontWeight.w600,
+              fontFamily: 'Poppins',
+              color: Color(0xFF000000).withValues(alpha: 0.75),
+            ),
           ),
-          Positioned(
-            width:325,
-            height:62,
-            top: 656,
-            left: 26,
-            child: ElevatedButton(
-             onPressed:(){
-
-             },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xFF50C2C9),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(0)
-                )
-              ),
-             child: 
-             Text("Get Started",
-             textAlign: TextAlign.center,
-              style: 
-              TextStyle(
+          Padding(
+            padding: EdgeInsets.only(top: 36, left: 48, right: 46, bottom: 92),
+            child: Text(
+              "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit. Interdum\n dictum tempus, interdum at dignissim\n metus. Ultricies sed nunc.",
+              style: TextStyle(
+                fontSize: 13,
+                fontWeight: FontWeight.w400,
                 fontFamily: 'Poppins',
-                fontWeight: FontWeight.w600,
-                fontSize: 18,
-                height: 1.37,
-                letterSpacing: 1.08,
-                color: Color(0xFFFFFFFF)
-                ),
-
-              )
-          )
+                color: Color(0xFF000000).withValues(alpha: 0.74),
+              ),
+              textAlign: TextAlign.center,
+            ),
           ),
-    ],
-    ),
-  );
-}
+          AppButton(
+            textButton: 'Get Started',
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => RegistrationScreen()),
+              );
+            },
+          ),
+        ],
+      ),
+    );
+  }
 }
