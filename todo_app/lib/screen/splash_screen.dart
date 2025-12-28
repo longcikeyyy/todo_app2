@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/component/app_button.dart';
 import 'package:todo_app/constant/app_path.dart';
+import 'package:todo_app/constant/app_textstyle.dart';
 import 'package:todo_app/screen/registration_screen.dart';
 
 /// Cốt lỗi cuối cùng của lập trình
@@ -22,23 +23,13 @@ class SplashScreen extends StatelessWidget {
           SizedBox(height: 45),
           Text(
             'Gets things done with TODO',
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w600,
-              fontFamily: 'Poppins',
-              color: Color(0xFF000000).withValues(alpha: 0.75),
-            ),
+            style: AppTextstyle.fontBold,
           ),
           Padding(
             padding: EdgeInsets.only(top: 36, left: 48, right: 46, bottom: 92),
             child: Text(
               "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit. Interdum\n dictum tempus, interdum at dignissim\n metus. Ultricies sed nunc.",
-              style: TextStyle(
-                fontSize: 13,
-                fontWeight: FontWeight.w400,
-                fontFamily: 'Poppins',
-                color: Color(0xFF000000).withValues(alpha: 0.74),
-              ),
+              style: AppTextstyle.fontRegular,
               textAlign: TextAlign.center,
             ),
           ),
