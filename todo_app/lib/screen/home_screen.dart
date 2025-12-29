@@ -6,6 +6,17 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Column(children: [Image.asset(AppPath.imgShape)]));
+    return Scaffold(
+      body: Column(
+        children: [
+          InkWell(
+            onTap: () {
+              Navigator.popUntil(context, ModalRoute.withName('/splashScreen'));
+            },
+            child: Image.asset(AppPath.imgShape),
+          ),
+        ],
+      ),
+    );
   }
 }
