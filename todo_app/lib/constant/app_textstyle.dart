@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/constant/app_color.dart';
+
 class AppTextstyle {
   /// Regular -> 400
   /// Medium -> 500
@@ -12,11 +13,10 @@ class AppTextstyle {
     fontWeight: FontWeight.w600,
     color: AppColor.blackColor.withValues(alpha: 0.75),
   );
-   static TextStyle fontRegular = TextStyle(
+  static TextStyle fontRegular = TextStyle(
     fontFamily: 'Poppins',
     fontSize: 13,
     fontWeight: FontWeight.w400,
     color: AppColor.blackColor.withValues(alpha: 0.74),
   );
-
 }
