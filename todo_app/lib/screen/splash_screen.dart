@@ -16,7 +16,7 @@ class SplashScreen extends StatelessWidget {
         children: [
           Align(
             alignment: Alignment.topLeft,
-            child: Image.asset(AppPath.shape),
+            child: Image.asset(AppPath.imgShape),
           ),
           SizedBox(height: (59 / 812) * MediaQuery.of(context).size.height),
           Center(child: Image.asset(AppPath.imgPhoneWithPerson)),
