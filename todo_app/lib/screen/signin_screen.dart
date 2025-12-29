@@ -69,7 +69,7 @@ class SigninScreen extends StatelessWidget {
           AppButton(
             textButton: "Sign In",
             onTap: () {
-              MaterialPageRoute(builder: (context) => HomeScreen());
+              Navigator.pushNamed(context, '/homeScreen');
             },
           ),
         ],

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/constant/app_color.dart';
+import 'package:todo_app/constant/app_textstyle.dart';
 
 class AppButton extends StatelessWidget {
   final String textButton;
@@ -17,11 +19,8 @@ class AppButton extends StatelessWidget {
         alignment: Alignment.center,
         child: Text(
           textButton,
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w600,
-            fontFamily: 'Poppins',
-            color: Color(0xFFFFFFFF),
+          style: AppTextstyle.tsBoldSize18Black.copyWith(
+            color: AppColor.whiteColor,
           ),
         ),
       ),

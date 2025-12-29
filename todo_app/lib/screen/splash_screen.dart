@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:todo_app/component/app_button.dart';
 import 'package:todo_app/constant/app_path.dart';
 import 'package:todo_app/constant/app_textstyle.dart';
-import 'package:todo_app/screen/registration_screen.dart';
+import 'package:todo_app/routes/app_routes.dart';
 
 /// Cốt lỗi cuối cùng của lập trình
 /// Code phải dễ đọc, dễ hiểu, dễ bảo trì, dễ mở rộng, dễ tái sử dụng, dễ kiểm thử,
@@ -33,10 +33,7 @@ class SplashScreen extends StatelessWidget {
           AppButton(
             textButton: 'Get Started',
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => RegistrationScreen()),
-              );
+              Navigator.pushNamed(context, AppRoutes.registrationScreen);
             },
           ),
         ],
