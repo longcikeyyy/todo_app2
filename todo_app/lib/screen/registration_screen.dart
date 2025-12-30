@@ -5,8 +5,7 @@ import 'package:todo_app/constant/app_color.dart';
 import 'package:todo_app/constant/app_path.dart';
 import 'package:todo_app/constant/app_textstyle.dart';
 import 'package:todo_app/routes/app_routes.dart';
-import 'package:todo_app/screen/signin_screen.dart';
-import 'package:todo_app/screen/splash_screen.dart';
+
 
 class RegistrationScreen extends StatelessWidget {
   const RegistrationScreen({super.key});
@@ -69,7 +68,7 @@ class RegistrationScreen extends StatelessWidget {
               ],
             )
 
-            /// TODO: Implement Sign in text
+          
           ],
         ),
       ),
