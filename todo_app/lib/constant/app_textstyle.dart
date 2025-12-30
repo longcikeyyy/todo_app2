@@ -9,17 +9,11 @@ class AppTextstyle {
 
   static String fontFamily = 'Poppins';
 
-  static TextStyle fontBold = TextStyle(
-    fontFamily: fontFamily,
-    fontSize: 18,
-    fontWeight: FontWeight.w600,
-    color: AppColor.blackColor.withValues(alpha: 0.75),
-  );
-  static TextStyle fontRegular = TextStyle(
+ static TextStyle tsRegularSize13Black = TextStyle(
     fontFamily: fontFamily,
     fontSize: 13,
     fontWeight: FontWeight.w400,
-    color: AppColor.blackColor.withValues(alpha: 0.74),
+    color: AppColor.blackColor,
   );
 
   static TextStyle tsRegularSize18Black = TextStyle(
@@ -49,4 +43,33 @@ class AppTextstyle {
     fontWeight: FontWeight.w700,
     color: AppColor.blackColor,
   );
+
+   static TextStyle tsRegularSize14Black = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    color: AppColor.blackColor,
+  );
+
+  static TextStyle tsBoldSize14Black = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 14,
+    fontWeight: FontWeight.w600,
+    color: AppColor.blackColor,
+  );
+
+  static TextStyle tsMediumSize14Black = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColor.blackColor,
+  );
+
+  static TextStyle tsSemiBoldSize14Black = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 14,
+    fontWeight: FontWeight.w700,
+    color: AppColor.blackColor,
+  );
+
 }

@@ -21,12 +21,12 @@ class SplashScreen extends StatelessWidget {
           SizedBox(height: (59 / 812) * MediaQuery.of(context).size.height),
           Center(child: Image.asset(AppPath.imgPhoneWithPerson)),
           SizedBox(height: 45),
-          Text('Gets things done with TODO', style: AppTextstyle.fontBold),
+          Text('Gets things done with TODO', style: AppTextstyle.tsBoldSize18Black),
           Padding(
             padding: EdgeInsets.only(top: 36, left: 48, right: 46, bottom: 92),
             child: Text(
               "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit. Interdum\n dictum tempus, interdum at dignissim\n metus. Ultricies sed nunc.",
-              style: AppTextstyle.fontRegular,
+              style: AppTextstyle.tsRegularSize13Black,
               textAlign: TextAlign.center,
             ),
           ),

@@ -3,7 +3,7 @@ import 'package:todo_app/component/app_button.dart';
 import 'package:todo_app/constant/app_color.dart';
 import 'package:todo_app/constant/app_path.dart';
 import 'package:todo_app/constant/app_textstyle.dart';
-import 'package:todo_app/screen/home_screen.dart';
+
 
 class SigninScreen extends StatelessWidget {
   const SigninScreen({super.key});
@@ -19,7 +19,7 @@ class SigninScreen extends StatelessWidget {
             child: Image.asset(AppPath.imgShape),
           ),
           SizedBox(height: 35),
-          Center(child: Text("Welcome Back!", style: AppTextstyle.fontBold)),
+          Center(child: Text("Welcome Back!", style: AppTextstyle.tsBoldSize18Black)),
           SizedBox(height: 35),
           Image.asset(AppPath.imgPhoneWithPerson2),
           SizedBox(height: 46),
@@ -38,7 +38,7 @@ class SigninScreen extends StatelessWidget {
                   borderSide: BorderSide(color: AppColor.whiteColor),
                 ),
                 hintText: "Enter your email",
-                hintStyle: AppTextstyle.fontRegular,
+                hintStyle: AppTextstyle.tsRegularSize13Black,
               ),
             ),
           ),
@@ -52,7 +52,7 @@ class SigninScreen extends StatelessWidget {
                   borderSide: BorderSide(color: AppColor.whiteColor),
                 ),
                 hintText: "Enter password",
-                hintStyle: AppTextstyle.fontRegular,
+                hintStyle: AppTextstyle.tsRegularSize13Black,
               ),
             ),
           ),
