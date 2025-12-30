@@ -27,7 +27,7 @@ class AppTextfield extends StatelessWidget {
         ),
         suffixIcon: suffixIcon,
         hintText: hintText,
-        hintStyle: AppTextstyle.fontRegular,
+        hintStyle: AppTextstyle.tsRegularSize13Black,
       ),
     );
   }
