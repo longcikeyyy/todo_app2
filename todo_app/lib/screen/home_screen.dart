@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/constant/app_path.dart';
+import 'package:todo_app/constant/app_color.dart';
+//import 'package:todo_app/constant/app_path.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,14 +8,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor:AppColor.backgroundColor,
       body: Column(
         children: [
-          InkWell(
-            onTap: () {
-              Navigator.popUntil(context, ModalRoute.withName('/splashScreen'));
-            },
-            child: Image.asset(AppPath.imgShape),
-          ),
         ],
       ),
     );
