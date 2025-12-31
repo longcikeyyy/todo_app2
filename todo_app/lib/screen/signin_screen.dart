@@ -39,7 +39,7 @@ class SigninScreen extends StatelessWidget {
               child: AppTextfield(hintText: "Enter your email",)
             ),
             Padding(
-              padding: EdgeInsets.only(right: 25, left: 25, bottom: 25),
+              padding: EdgeInsets.only(right: 25, left: 25),
               child: AppTextfield(hintText:"Enter password")
             ),
             Padding(
